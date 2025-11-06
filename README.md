@@ -145,7 +145,13 @@ The full results are detailed in the paper (Table 1 and 2).
 | GCN + BiLSTM            | 0.941 [.931, .951] |     1.69    |
 
 
-Ablation Study (Key Finding):| Model Variant | F1-score | $\Delta$ || :--- | :--- | :--- || Full Model | 0.979 | --- || W/o $\phi$ (Physics Features) | 0.930 | -5.0% |
+Ablation Study (Key Finding):
+
+| Model Variant            | F1-score |   Δ   |
+| :----------------------- | :------: | :---: |
+| Full Model               |   0.979  |   —   |
+| w/o ϕ (Physics Features) |   0.930  | −5.0% |
+
 
 Explainability and VisualizationThe model provides two key interpretability outputs for operator decision support:GAT Attention Heatmaps: Visualize the learned spatial attention $\alpha_{ij}$. A high correlation ($\rho=0.81$) between attention flow and hydraulic paths confirms that the model learns physically meaningful relationships.Physics Violation Attribution: During an alarm, the model attributes the detection to either a Mass Violation or an Energy Violation, providing immediate diagnostic information.Refer to the notebooks/visualization.ipynb for scripts to generate the heatmaps and temporal profiles (Figures in Appendix).🤝 Contribution and CitationIf you find this work useful in your research, please consider citing our paper:Code snippet@article{Homaei2024PhysicsGAT,
   title={Graph Attention Networks with Physical Constraints for Anomaly Detection},
