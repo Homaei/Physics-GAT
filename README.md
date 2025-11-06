@@ -138,10 +138,12 @@ python src/4_transfer_learning.py --source c-town --target d-town --mode fine-tu
 ```
 📊 Results and Benchmarks
 The full results are detailed in the paper (Table 1 and 2).
-Method,F1-score [95% CI],TTD (hours)
-Physics-GAT (Full),"0.979 [.971,.986]",1.44
-B1 (Model-Based Winner),"0.946 [.932,.958]",1.61
-GCN+BiLSTM,"0.941 [.931,.951]",1.69
+| Method                  |  F1-score [95% CI] | TTD (hours) |
+| :---------------------- | :----------------: | :---------: |
+| Physics-GAT (Full)      | 0.979 [.971, .986] |     1.44    |
+| B1 (Model-Based Winner) | 0.946 [.932, .958] |     1.61    |
+| GCN + BiLSTM            | 0.941 [.931, .951] |     1.69    |
+
 
 Ablation Study (Key Finding):| Model Variant | F1-score | $\Delta$ || :--- | :--- | :--- || Full Model | 0.979 | --- || W/o $\phi$ (Physics Features) | 0.930 | -5.0% |
 
