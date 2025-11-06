@@ -153,12 +153,28 @@ Ablation Study (Key Finding):
 | w/o ϕ (Physics Features) |   0.930  | −5.0% |
 
 
-Explainability and VisualizationThe model provides two key interpretability outputs for operator decision support:GAT Attention Heatmaps: Visualize the learned spatial attention $\alpha_{ij}$. A high correlation ($\rho=0.81$) between attention flow and hydraulic paths confirms that the model learns physically meaningful relationships.Physics Violation Attribution: During an alarm, the model attributes the detection to either a Mass Violation or an Energy Violation, providing immediate diagnostic information.Refer to the notebooks/visualization.ipynb for scripts to generate the heatmaps and temporal profiles (Figures in Appendix).🤝 Contribution and CitationIf you find this work useful in your research, please consider citing our paper:Code snippet@article{Homaei2024PhysicsGAT,
-  title={Graph Attention Networks with Physical Constraints for Anomaly Detection},
-  author={Homaei, Mohammadhossein and Khazrak, Iman and Molano, Ruben and Caro, Andres and Avila, Mar},
-  journal={preprint},
-  year={2024},
-  publisher={َarxiv}
+Explainability and Visualization
+The model provides two interpretability outputs for operator decision support:
+
+GAT Attention Heatmaps: Visualize learned spatial attention (αᵢⱼ).
+A strong correlation (ρ = 0.81) between attention flow and hydraulic paths confirms that the model captures physically consistent relationships.
+
+Physics Violation Attribution: During anomaly detection, the model attributes alarms to Mass Violation or Energy Violation, providing immediate diagnostic insight.
+
+Scripts for generating heatmaps and temporal profiles (Figures in Appendix) are available in:
+notebooks/visualization.ipynb
+
+Contribution and Citation
+If you find this work useful, please cite:
+
+@article{Homaei2024PhysicsGAT,
+title={Graph Attention Networks with Physical Constraints for Anomaly Detection},
+author={Homaei, Mohammadhossein and Khazrak, Iman and Molano, Ruben and Caro, Andres and Avila, Mar},
+journal={preprint},
+year={2024},
+publisher={arXiv}
 }
-📧 ContactFor any questions, issues, or collaboration opportunities, please contact the corresponding author:Hubert Homaei
+
+Contact
+Hubert Homaei
 Email: Homaei@ieee.org
