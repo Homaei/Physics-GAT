@@ -103,16 +103,18 @@ Clone the repository and install dependencies:
 ```bash
 git clone [https://github.com/Homaei/Physics-GAT.git](https://github.com/Homaei/Physics-GAT.git)
 cd Physics-GAT
-
+```
 # Install core libraries and PyTorch Geometric dependencies (using requirements.txt)
+```bash
 pip install -r requirements.txt
-
+```
 
 Running the ModelPreprocessing: 
 
 1. Run the feature generation script to calculate the PI features ($\phi_{\text{mass}}, \phi_{\text{energy}}$) and interpolate unmeasured nodes.
-
+```bash
 python src/1_preprocess_data.py --network c-town
+```
 # This generates preprocessed_features.pt in the data/ folder.
 
 2. Training: Start the training process on the C-Town dataset.
