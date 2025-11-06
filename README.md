@@ -175,7 +175,7 @@ If you find this work useful, please cite:
 title={Graph Attention Networks with Physical Constraints for Anomaly Detection},
 author={Homaei, Mohammadhossein and Khazrak, Iman and Molano, Ruben and Caro, Andres and Avila, Mar},
 journal={preprint},
-year={2024},
+year={2025},
 publisher={arXiv}
 }
 
