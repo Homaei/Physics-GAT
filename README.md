@@ -118,20 +118,24 @@ python src/1_preprocess_data.py --network c-town
 # This generates preprocessed_features.pt in the data/ folder.
 
 2. Training: Start the training process on the C-Town dataset.
-
+```bash
 python src/2_train_model.py --network c-town --epochs 50 --lr 0.001
-
+```
 3. Evaluation: Test the trained model on the BATADAL test set.
+```bash
 python src/3_evaluate_model.py --network c-town --checkpoint checkpoints/best_model.pt
+```
 
 Replicating Multi-Network Validation
 To replicate the Zero-Shot and Fine-Tuned transfer learning experiments (Section 4.2.2), use the dedicated transfer script:
 # Zero-Shot Transfer (Train on C-Town, Test on D-Town)
+```bash
 python src/4_transfer_learning.py --source c-town --target d-town --mode zero-shot
-
+```
 # Fine-Tuned Transfer (Train on C-Town, Fine-tune on 10% D-Town)
+```bash
 python src/4_transfer_learning.py --source c-town --target d-town --mode fine-tune --finetune_ratio 0.1
-
+```
 📊 Results and Benchmarks
 The full results are detailed in the paper (Table 1 and 2).
 Method,F1-score [95% CI],TTD (hours)
@@ -144,8 +148,9 @@ Ablation Study (Key Finding):| Model Variant | F1-score | $\Delta$ || :--- | :--
 Explainability and VisualizationThe model provides two key interpretability outputs for operator decision support:GAT Attention Heatmaps: Visualize the learned spatial attention $\alpha_{ij}$. A high correlation ($\rho=0.81$) between attention flow and hydraulic paths confirms that the model learns physically meaningful relationships.Physics Violation Attribution: During an alarm, the model attributes the detection to either a Mass Violation or an Energy Violation, providing immediate diagnostic information.Refer to the notebooks/visualization.ipynb for scripts to generate the heatmaps and temporal profiles (Figures in Appendix).🤝 Contribution and CitationIf you find this work useful in your research, please consider citing our paper:Code snippet@article{Homaei2024PhysicsGAT,
   title={Graph Attention Networks with Physical Constraints for Anomaly Detection},
   author={Homaei, Mohammadhossein and Khazrak, Iman and Molano, Ruben and Caro, Andres and Avila, Mar},
-  journal={ICT Express},
+  journal={preprint},
   year={2024},
-  publisher={Elsevier}
+  publisher={َarxiv}
 }
-📧 ContactFor any questions, issues, or collaboration opportunities, please contact the corresponding author:Mohammadhossein HomaeiEmail: mhomaein@alumnos.unex.es
+📧 ContactFor any questions, issues, or collaboration opportunities, please contact the corresponding author:Hubert Homaei
+Email: Homaei@ieee.org
