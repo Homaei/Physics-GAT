@@ -11,7 +11,8 @@ This repository contains the official implementation of the paper:
 
 > **"Graph Attention Networks with Physical Constraints for Anomaly Detection"**
 > Authors: Mohammadhossein Homaei, Iman Khazrak, Ruben Molano, Andres Caro, Mar Avila
-> Journal: *ICT Express* (In Press/Published)
+> Journal: *Preprint* (Arxiv)
+
 
 ![GAT Architecture](https://github.com/Homaei/Physics-GAT/blob/main/GAT.png?raw=true)
 
