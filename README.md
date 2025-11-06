@@ -13,6 +13,9 @@ This repository contains the official implementation of the paper:
 > Authors: Mohammadhossein Homaei, Iman Khazrak, Ruben Molano, Andres Caro, Mar Avila
 > Journal: *ICT Express* (In Press/Published)
 
+![GAT Architecture](https://github.com/Homaei/Physics-GAT/blob/main/GAT.png?raw=true)
+
+
 ### The Core Idea
 
 The Physics-GAT framework is proposed to enhance anomaly detection in **Water Distribution Systems (WDSs)** by combining two critical elements often ignored by purely data-driven models: **Network Topology** and **Hydraulic Physics**.
